@@ -13,4 +13,8 @@ function showForgotPassword() {
   document.getElementById("forgot-password-form").style.display = "block";
 }
 
+function hideForgotPassword() {
+  document.getElementById("login-form").style.display = "block";
+  document.displaygetElementById("forgot-password-form").style.display = "none"; // Corrected line
+}
 
