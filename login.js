@@ -17,4 +17,8 @@ function hideForgotPassword() {
   document.getElementById("login-form").style.display = "block";
   document.displaygetElementById("forgot-password-form").style.display = "none"; // Corrected line
 }
+function rememberMe() {
+  const rememberMeCheckbox = document.getElementById("remember-me");
+  // Logic to store or retrieve login credentials based on checkbox state (consider security!)
+}
 
