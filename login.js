@@ -7,15 +7,16 @@ const app = express();
 const port = 3000;
 
 // Replace with your MongoDB connection details
-const uri = "mongodb://localhost:27017/yourDatabaseName";
-let db;
+const { MongoClient, ServerApiVersion } = require('mongodb');
+const uri = "mongodb+srv://korirbrian222:ns4VxdQhLmbxqMA2@korir.laharav.mongodb.net/?retryWrites=true&w=majority&appName=Korir";
+
 
 MongoClient.connect(uri, (err, client) => {
   if (err) {
     console.error(err);
     return;
   }
-  db = client.db("yourDatabaseName");
+  db = client.db("Korir");
   console.log("Connected to MongoDB");
 });
 
